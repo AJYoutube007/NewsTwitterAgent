@@ -1,0 +1,25 @@
+[project]
+name = "NewsTwitter_Agent"
+version = "0.0.18"
+description = "NewsTwitter_Agent"
+authors = [{ name = "Abhishek jagtap", email = "jagtapabhi13@gmail.com" }]
+dependencies = [
+    "uipath-langchain",
+    "langchain-anthropic",
+    "langgraph",
+    "python-dotenv",
+    "tweepy",
+    "aiohttp",
+    "pydantic",
+    "newsapi-python",
+    "langchain-core"
+
+]
+requires-python = ">=3.10"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = []

@@ -1,0 +1,344 @@
+{
+    "entryPoints": [
+        {
+            "filePath": "agent",
+            "uniqueId": "b66ddc18-aca3-4ae9-891e-e04c1b3475fa",
+            "type": "agent",
+            "input": {
+                "type": "object",
+                "properties": {
+                    "topic": {
+                        "title": "Topic",
+                        "type": "string"
+                    },
+                    "articles": {
+                        "items": {
+                            "properties": {
+                                "title": {
+                                    "title": "Title",
+                                    "type": "string"
+                                },
+                                "description": {
+                                    "title": "Description",
+                                    "type": "string"
+                                },
+                                "source": {
+                                    "title": "Source",
+                                    "type": "string"
+                                },
+                                "author": {
+                                    "type": "string"
+                                },
+                                "url": {
+                                    "title": "Url",
+                                    "type": "string"
+                                },
+                                "published_at": {
+                                    "title": "Published At",
+                                    "type": "string"
+                                },
+                                "image_url": {
+                                    "type": "string"
+                                },
+                                "priority_score": {
+                                    "default": 0.0,
+                                    "title": "Priority Score",
+                                    "type": "number"
+                                },
+                                "priority_reason": {
+                                    "default": "",
+                                    "title": "Priority Reason",
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "description",
+                                "source",
+                                "url",
+                                "published_at"
+                            ],
+                            "title": "Article",
+                            "type": "object"
+                        },
+                        "title": "Articles",
+                        "type": "array"
+                    },
+                    "top_articles": {
+                        "items": {
+                            "properties": {
+                                "title": {
+                                    "title": "Title",
+                                    "type": "string"
+                                },
+                                "description": {
+                                    "title": "Description",
+                                    "type": "string"
+                                },
+                                "source": {
+                                    "title": "Source",
+                                    "type": "string"
+                                },
+                                "author": {
+                                    "type": "string"
+                                },
+                                "url": {
+                                    "title": "Url",
+                                    "type": "string"
+                                },
+                                "published_at": {
+                                    "title": "Published At",
+                                    "type": "string"
+                                },
+                                "image_url": {
+                                    "type": "string"
+                                },
+                                "priority_score": {
+                                    "default": 0.0,
+                                    "title": "Priority Score",
+                                    "type": "number"
+                                },
+                                "priority_reason": {
+                                    "default": "",
+                                    "title": "Priority Reason",
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "description",
+                                "source",
+                                "url",
+                                "published_at"
+                            ],
+                            "title": "Article",
+                            "type": "object"
+                        },
+                        "title": "Top Articles",
+                        "type": "array"
+                    },
+                    "rewritten_tweets": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "title": "Rewritten Tweets",
+                        "type": "array"
+                    },
+                    "auto_post": {
+                        "title": "Auto Post",
+                        "type": "boolean"
+                    },
+                    "num_tweets_to_post": {
+                        "title": "Num Tweets To Post",
+                        "type": "integer"
+                    },
+                    "tweet_results": {
+                        "items": {
+                            "properties": {
+                                "tweet_text": {
+                                    "title": "Tweet Text",
+                                    "type": "string"
+                                },
+                                "tweet_id": {
+                                    "type": "string"
+                                },
+                                "tweet_url": {
+                                    "type": "string"
+                                },
+                                "success": {
+                                    "default": false,
+                                    "title": "Success",
+                                    "type": "boolean"
+                                },
+                                "error": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "tweet_text"
+                            ],
+                            "title": "TweetResult",
+                            "type": "object"
+                        },
+                        "title": "Tweet Results",
+                        "type": "array"
+                    }
+                },
+                "required": []
+            },
+            "output": {
+                "type": "object",
+                "properties": {
+                    "topic": {
+                        "default": null,
+                        "title": "Topic",
+                        "type": "string"
+                    },
+                    "articles": {
+                        "default": null,
+                        "items": {
+                            "properties": {
+                                "title": {
+                                    "title": "Title",
+                                    "type": "string"
+                                },
+                                "description": {
+                                    "title": "Description",
+                                    "type": "string"
+                                },
+                                "source": {
+                                    "title": "Source",
+                                    "type": "string"
+                                },
+                                "author": {
+                                    "type": "string"
+                                },
+                                "url": {
+                                    "title": "Url",
+                                    "type": "string"
+                                },
+                                "published_at": {
+                                    "title": "Published At",
+                                    "type": "string"
+                                },
+                                "image_url": {
+                                    "type": "string"
+                                },
+                                "priority_score": {
+                                    "default": 0.0,
+                                    "title": "Priority Score",
+                                    "type": "number"
+                                },
+                                "priority_reason": {
+                                    "default": "",
+                                    "title": "Priority Reason",
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "description",
+                                "source",
+                                "url",
+                                "published_at"
+                            ],
+                            "title": "Article",
+                            "type": "object"
+                        },
+                        "title": "Articles",
+                        "type": "array"
+                    },
+                    "top_articles": {
+                        "default": null,
+                        "items": {
+                            "properties": {
+                                "title": {
+                                    "title": "Title",
+                                    "type": "string"
+                                },
+                                "description": {
+                                    "title": "Description",
+                                    "type": "string"
+                                },
+                                "source": {
+                                    "title": "Source",
+                                    "type": "string"
+                                },
+                                "author": {
+                                    "type": "string"
+                                },
+                                "url": {
+                                    "title": "Url",
+                                    "type": "string"
+                                },
+                                "published_at": {
+                                    "title": "Published At",
+                                    "type": "string"
+                                },
+                                "image_url": {
+                                    "type": "string"
+                                },
+                                "priority_score": {
+                                    "default": 0.0,
+                                    "title": "Priority Score",
+                                    "type": "number"
+                                },
+                                "priority_reason": {
+                                    "default": "",
+                                    "title": "Priority Reason",
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "title",
+                                "description",
+                                "source",
+                                "url",
+                                "published_at"
+                            ],
+                            "title": "Article",
+                            "type": "object"
+                        },
+                        "title": "Top Articles",
+                        "type": "array"
+                    },
+                    "rewritten_tweets": {
+                        "default": null,
+                        "items": {
+                            "type": "string"
+                        },
+                        "title": "Rewritten Tweets",
+                        "type": "array"
+                    },
+                    "auto_post": {
+                        "default": null,
+                        "title": "Auto Post",
+                        "type": "boolean"
+                    },
+                    "num_tweets_to_post": {
+                        "default": null,
+                        "title": "Num Tweets To Post",
+                        "type": "integer"
+                    },
+                    "tweet_results": {
+                        "default": null,
+                        "items": {
+                            "properties": {
+                                "tweet_text": {
+                                    "title": "Tweet Text",
+                                    "type": "string"
+                                },
+                                "tweet_id": {
+                                    "type": "string"
+                                },
+                                "tweet_url": {
+                                    "type": "string"
+                                },
+                                "success": {
+                                    "default": false,
+                                    "title": "Success",
+                                    "type": "boolean"
+                                },
+                                "error": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "tweet_text"
+                            ],
+                            "title": "TweetResult",
+                            "type": "object"
+                        },
+                        "title": "Tweet Results",
+                        "type": "array"
+                    }
+                },
+                "required": []
+            }
+        }
+    ],
+    "bindings": {
+        "version": "2.0",
+        "resources": []
+    }
+}
