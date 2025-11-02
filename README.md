@@ -114,6 +114,28 @@ Installation
 
 1️⃣ Clone the Repository
 ```bash
-    pip install langgraph pydantic uipath-langchain tweepy aiohttp requests python-dotenv newsapi-python
+    git clone https://github.com/AJYoutube007/NewsTwitterAgent.git
 ```
 
+2️⃣ Create a Virtual Environment
+```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+3️⃣ Set up environment variables (As Mention Above)
+4️⃣ Authenticate with UiPath
+```bash
+uipath auth
+```
+5️⃣ Package the project
+```bash
+uipath pack
+```
+6️⃣ Publish the project
+```bash
+uipath publish
+```
+7️⃣ To Run Locally
+```bash
+python main.py
+```
